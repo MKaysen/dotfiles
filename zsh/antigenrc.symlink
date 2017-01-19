@@ -1,0 +1,12 @@
+antigen use prezto
+
+antigen bundles <<EOBUNDLES
+  git
+  git-flow-avh
+  command-not-found
+  zsh-users/zsh-syntax-highlighting
+EOBUNDLES
+
+antigen theme dracula/zsh dracula
+
+antigen apply

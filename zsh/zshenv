@@ -1,0 +1,4 @@
+#!/usr/bin/env zsh
+
+DOTFILES_ROOT=sed_dotfiles_root
+ANTIGEN_ZSH="$DOTFILES_ROOT/zsh/antigen/antigen.zsh"
