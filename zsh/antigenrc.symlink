@@ -1,4 +1,4 @@
-antigen use prezto
+antigen use oh-my-zsh
 
 antigen bundles <<EOBUNDLES
   git
