@@ -4,6 +4,7 @@ antigen bundles <<EOBUNDLES
   git
   git-flow-avh
   command-not-found
+  wd
   zsh-users/zsh-syntax-highlighting
 EOBUNDLES
 

@@ -2,3 +2,4 @@
 
 source $ANTIGEN_ZSH
 antigen init $HOME/.antigenrc
+
