@@ -68,13 +68,6 @@ setup_gitconfig () {
   print_success 'gitconfig'
 }
 
-#-------------------------- ZSH environment functions -------------------------#
-setup_zshenv () {
-  print_info 'setup zshenv'
-  sed "s|sed_dotfiles_root|$DOTFILES_ROOT|g" < $ZSHENV > $HOME/.zshenv
-  print_success 'zshenv'
-}
-
 #------------------------------- Link functions -------------------------------#
 link_file() {
   if [ -e $2 ]; then
@@ -102,5 +95,4 @@ install_dotfiles () {
 }
 
 setup_gitconfig
-setup_zshenv
 install_dotfiles
