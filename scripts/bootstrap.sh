@@ -9,6 +9,7 @@ DOTFILES_ROOT="$(pwd -P $0)"
 BACKUP_DIR="$HOME/.backup"
 ZSHENV="$DOTFILES_ROOT/zsh/zshenv"
 VIM_BUNDLE_DIR="$HOME/.vim/bundle"
+VUNDLE_DIR="$VIM_BUNDLE_DIR/Vundle.vim"
 VUNDLE_GIT="https://github.com/VundleVim/Vundle.vim.git"
 
 #------------------------------- Make directory -------------------------------#
@@ -103,8 +104,12 @@ install_dotfiles () {
 #------------------------------- Install Vundle -------------------------------#
 install_vundle () {
   print_info 'installing vundle'
-  vim_bundle_dir
-  git clone "$VUNDLE_GIT" "$VIM_BUNDLE_DIR/Vundle.vim"
+  if [ ! -d "$VUNDLE_DIR" ]; then
+    vim_bundle_dir
+    git clone "$VUNDLE_GIT" "$VUNDLE_DIR"
+  else
+    print_success "vundle already installed"
+  fi
 }
 
 #------------------------------- Bootstrap Calls ------------------------------#
