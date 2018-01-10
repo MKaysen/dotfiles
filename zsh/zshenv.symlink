@@ -4,7 +4,7 @@ export JDK_HOME="$(/usr/libexec/java_home)"
 export JAVA_HOME=$JDK_HOME
 
 DOTFILES_ROOT=/Users/Mikkel/code/private/dotfiles
-ANTIGEN_ZSH="$DOTFILES_ROOT/zsh/antigen/antigen.zsh"
+ANTIGEN_ZSH="/usr/local/share/antigen/antigen.zsh"
 
 export GOPATH=~/code/go
 
