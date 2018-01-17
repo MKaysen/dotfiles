@@ -6,6 +6,7 @@ antigen bundles <<EOBUNDLES
   sorin-ionescu/prezto modules/autosuggestions
   sorin-ionescu/prezto modules/command-not-found
   sorin-ionescu/prezto modules/completion
+  sorin-ionescu/prezto modules/directory
   sorin-ionescu/prezto modules/docker
   sorin-ionescu/prezto modules/git
   sorin-ionescu/prezto modules/history-substring-search
