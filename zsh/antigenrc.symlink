@@ -1,15 +1,28 @@
-antigen use oh-my-zsh
+antigen use prezto
 
 antigen bundles <<EOBUNDLES
-  git
-  git-flow-avh
-  command-not-found
-  wd
-  zsh-users/zsh-syntax-highlighting
-  zsh-users/zsh-autosuggestions
-  zsh-users/zsh-completions
+  sorin-ionescu/prezto modules/helper
+
+  sorin-ionescu/prezto modules/autosuggestions
+  sorin-ionescu/prezto modules/command-not-found
+  sorin-ionescu/prezto modules/completion
+  sorin-ionescu/prezto modules/docker
+  sorin-ionescu/prezto modules/git
+  sorin-ionescu/prezto modules/history-substring-search
+  sorin-ionescu/prezto modules/node
+  sorin-ionescu/prezto modules/prompt
+  sorin-ionescu/prezto modules/syntax-highlighting
+  sorin-ionescu/prezto modules/terminal
+  sorin-ionescu/prezto modules/utility
 EOBUNDLES
 
-antigen theme dracula/zsh dracula
+# macOS specific bundles
+if [[ "$OSTYPE" == "darwin"* ]]; then
+  antigen bundle sorin-ionescu/prezto modules/homebrew
+  antigen bundle sorin-ionescu/prezto modules/osx
+fi
+
+antigen theme ~/.prompt-themes --no-local-clone mkaysen
 
 antigen apply
+
