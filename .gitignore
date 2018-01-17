@@ -111,3 +111,6 @@ emacs/emacs.d.symlink/*
 
 !emacs/emacs.d.symlink/init.el
 !emacs/emacs.d.symlink/init
+
+# antigen generated files
+*.antigen-compat
