@@ -17,6 +17,9 @@ antigen bundles <<EOBUNDLES
   sorin-ionescu/prezto modules/utility
 
   jedahan/ripz
+  Tarrasch/zsh-bd
+  voronkovich/gitignore.plugin.zsh
+
 EOBUNDLES
 
 # macOS specific bundles
@@ -25,7 +28,7 @@ if [[ "$OSTYPE" == "darwin"* ]]; then
   antigen bundle sorin-ionescu/prezto modules/osx
 fi
 
-antigen theme ~/.prompt-themes --no-local-clone mkaysen
+antigen theme MKaysen/zsh-themes  mkaysen/mkaysen
 
 antigen apply
 
