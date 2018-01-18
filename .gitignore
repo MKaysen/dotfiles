@@ -107,10 +107,8 @@ tags
 
 ### Dotfiles Custom ###
 # emacs.d
-emacs/emacs.d.symlink/*
+emacs/emacs.d.symlink/elpa
+emacs/emacs.d.symlink/auto-save-list
 
-!emacs/emacs.d.symlink/init.el
-!emacs/emacs.d.symlink/init
-
-# antigen generated files
+# Antigen generated files
 *.antigen-compat
