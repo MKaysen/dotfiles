@@ -22,6 +22,7 @@ zmodule romkatv/powerlevel10k --use degit
 
 # Additional completion definitions for Zsh.
 zmodule zsh-users/zsh-completions
+zmodule mkaysen/zsh-completions -n mkaysen-zsh-completion
 # Enables and configures smart and extensive tab completion.
 # completion must be sourced after zsh-users/zsh-completions
 zmodule completion
@@ -34,6 +35,7 @@ zmodule zdharma-continuum/fast-syntax-highlighting
 # zsh-users/zsh-history-substring-search must be sourced after zsh-users/zsh-syntax-highlighting
 zmodule zsh-users/zsh-history-substring-search
 
-zmodule mkaysen/zsh-asdf
+zmodule zimfw/zsh-asdf
+zmodule mkaysen/zsh-exa
 
 # }}} End configuration added by Zim install

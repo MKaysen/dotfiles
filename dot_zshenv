@@ -6,3 +6,8 @@
 # Define Zim location
 : ${ZIM_HOME=${ZDOTDIR:-${HOME}}/.zim}
 # }}} End configuration added by Zim install
+
+path=($HOME/.local/bin $path)
+
+export PATH
+
