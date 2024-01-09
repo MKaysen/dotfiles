@@ -1,0 +1,3 @@
+[include]
+	path = .config/git/default.config
+	path = .config/git/work.config
