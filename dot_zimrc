@@ -16,6 +16,7 @@ zmodule utility
 zmodule termtitle
 zmodule zsh-users/zsh-autosuggestions
 zmodule zdharma-continuum/fast-syntax-highlighting
+zmodule jeffreytse/zsh-vi-mode
 
 # Tools
 
@@ -25,6 +26,7 @@ zmodule mkaysen/zsh-fzf
 zmodule mkaysen/zsh-eza
 zmodule joke/zim-chezmoi
 zmodule joke/zim-mise
+zmodule kiesman99/zim-zoxide
 
 # -------
 # Completion

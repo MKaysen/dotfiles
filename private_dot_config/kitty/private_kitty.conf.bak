@@ -870,7 +870,7 @@ disable_ligatures never
 #: Fade the text in inactive windows by the specified amount (a number
 #: between zero and one, with zero being fully faded).
 
-hide_window_decorations yes
+# hide_window_decorations no
 
 #: Hide the window decorations (title-bar and window borders) with
 #: yes. On macOS, titlebar-only and titlebar-and-corners can be used
@@ -1171,7 +1171,7 @@ hide_window_decorations yes
 #: When background image is scaled, whether linear interpolation
 #: should be used.
 
-dynamic_background_opacity yes
+# dynamic_background_opacity no
 
 #: Allow changing of the background_opacity dynamically, using either
 #: keyboard shortcuts (increase_background_opacity and
@@ -1601,7 +1601,7 @@ dynamic_background_opacity yes
 #: background_opacity. If you want to use both, you are probably
 #: better off just hiding the titlebar with hide_window_decorations.
 
-macos_option_as_alt left
+# macos_option_as_alt no
 
 #: Use the Option key as an Alt key on macOS. With this set to no,
 #: kitty will use the macOS native Option+Key to enter Unicode
@@ -2451,9 +2451,3 @@ macos_option_as_alt left
 #: }}}
 
 #: }}}
-
-
-# BEGIN_KITTY_THEME
-# Catppuccin Kitty Mocha
-include current-theme.conf
-# END_KITTY_THEME

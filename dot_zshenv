@@ -7,7 +7,12 @@
 : ${ZIM_HOME=${ZDOTDIR:-${HOME}}/.zim}
 # }}} End configuration added by Zim install
 
+typeset -U path
+path+=("${HOME}/.local/bin")
+
 : ${EDITOR="nvim"}
 : ${VISUAL="nvim"}
 
-path+=("${HOME}/.local/bin")
+export EDITOR
+export VISUAL
+
