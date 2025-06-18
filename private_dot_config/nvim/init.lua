@@ -1,2 +1,2 @@
-require("mkaysen")
+require('config')
 

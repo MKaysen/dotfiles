@@ -22,8 +22,8 @@ zmodule jeffreytse/zsh-vi-mode
 
 zmodule git
 zmodule fzf
-zmodule mkaysen/zsh-fzf
-zmodule mkaysen/zsh-eza
+zmodule mikkelkaysen/zsh-fzf
+zmodule mikkelkaysen/zsh-eza
 zmodule joke/zim-chezmoi
 zmodule joke/zim-mise
 zmodule kiesman99/zim-zoxide
@@ -33,7 +33,7 @@ zmodule kiesman99/zim-zoxide
 # -------
 
 zmodule zsh-users/zsh-completions --fpath src
-zmodule mkaysen/zsh-completions -n mkaysen-zsh-completion
+zmodule mikkelkaysen/zsh-completions -n mkaysen-zsh-completion
 
 # Finalize
 zmodule completion
