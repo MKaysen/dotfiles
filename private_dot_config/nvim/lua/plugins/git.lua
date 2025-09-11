@@ -1,5 +1,14 @@
 return {
   {
+    "NeogitOrg/neogit",
+    dependencies = {
+      "nvim-lua/plenary.nvim",
+      "sindrets/diffview.nvim",
+      "nvim-telescope/telescope.nvim",
+    },
+    opts = {},
+  },
+  {
     "lewis6991/gitsigns.nvim",
     opts = {
       signs = {
@@ -110,5 +119,23 @@ return {
         )
       end,
     },
+  },
+  {
+    "polarmutex/git-worktree.nvim",
+    version = "^2",
+    dependencies = {
+      "nvim-lua/plenary.nvim",
+      "nvim-telescope/telescope.nvim",
+    },
+    init = function()
+      require("telescope").load_extension("git_worktree")
+
+      vim.keymap.set(
+        "n",
+        "<leader>wf",
+        require("telescope").extensions.git_worktree.git_worktree,
+        { desc = "Git [W]orktree [F]ind" }
+      )
+    end,
   },
 }

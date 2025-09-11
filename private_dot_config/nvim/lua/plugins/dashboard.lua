@@ -8,6 +8,9 @@ return {
     },
   },
   opts = function()
+    local telescope = require("telescope")
+    local builtin = require("telescope.builtin")
+
     local ascii = require("ascii")
     local logo = ascii.art.text.neovim.sharp
 
@@ -24,7 +27,9 @@ return {
         header = logo,
         center = {
           {
-            action = "lua LazyVim.pick()()",
+            action = function()
+              builtin.find_files()
+            end,
             desc = " Find File",
             icon = " ",
             key = "f",
@@ -36,19 +41,25 @@ return {
             key = "n",
           },
           {
-            action = 'lua LazyVim.pick("oldfiles")()',
+            action = function()
+              builtin.oldfiles()
+            end,
             desc = " Recent Files",
             icon = " ",
             key = "r",
           },
           {
-            action = 'lua LazyVim.pick("live_grep")()',
+            action = function()
+              builtin.live_grep()
+            end,
             desc = " Find Text",
             icon = " ",
             key = "g",
           },
           {
-            action = "lua LazyVim.pick.config_files()()",
+            action = function()
+              telescope.extensions.chezmoi.find_files()
+            end,
             desc = " Config",
             icon = " ",
             key = "c",
@@ -58,12 +69,6 @@ return {
             desc = " Restore Session",
             icon = " ",
             key = "s",
-          },
-          {
-            action = "LazyExtras",
-            desc = " Lazy Extras",
-            icon = " ",
-            key = "x",
           },
           {
             action = "Lazy",
