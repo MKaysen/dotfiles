@@ -47,6 +47,7 @@ return {
         { "<leader>s", group = "[S]earch" },
         { "<leader>t", group = "[T]oggle" },
         { "<leader>h", group = "Git [H]unk", mode = { "n", "v" } },
+        { "<leader>y", group = "[Y]azi", mode = { "n", "v" } },
       },
     },
   },
@@ -91,6 +92,43 @@ return {
 
       -- ... and there is more!
       --  Check out: https://github.com/echasnovski/mini.nvim
+    end,
+  },
+  {
+    "mikavilpas/yazi.nvim",
+    version = "*",
+    event = "VeryLazy",
+    dependencies = {
+      { "nvim-lua/plenary.nvim", lazy = true },
+    },
+    keys = {
+      {
+        "<leader>y-",
+        mode = { "n", "v" },
+        "<cmd>Yazi<cr>",
+        desc = "[Y]azi at the current file",
+      },
+      {
+        "<leader>yc",
+        mode = { "n", "v" },
+        "<cmd>Yazi cwd<cr>",
+        desc = "[Y]azi at [c]urrent working directory",
+      },
+      {
+        "<leader>yr",
+        mode = { "n", "v" },
+        "<cmd>Yazi toggle<cr>",
+        desc = "[Y]azi resume session",
+      },
+    },
+    opts = {
+      open_for_directories = true,
+      keymaps = {
+        show_help = "<F1>",
+      },
+    },
+    init = function()
+      vim.g.loaded_netrwPlugin = 1
     end,
   },
 }
